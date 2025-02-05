@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Inter";
+    src: url('./fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url('./fonts/Inter-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.page {
+    background-color: #2A2C2F;
+    color: #FFFFFF;
+    font-family: "Inter";
+}
+
+.content {
+   
+}
+
+.content__logo {}
+
+.hero {}
+
+.hero__heading {
+}
+
+.hero__subheading {}
+
+.hero__image {}
+
+.description {}
+
+.description__heading {
+    font-family: "Inter";
+}
+
+.description__quote {}
+
+.description__quote-author {}
+
+.description__paragraph {
+}
+
+.content__copyright {}
