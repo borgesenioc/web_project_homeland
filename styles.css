@@ -36,7 +36,7 @@
 .content__logo {
     width: calc(254 / 1280 * 100%);
     height: auto;
-    margin-top: calc(34 / 1883 * 100%);
+    margin-top: calc(34/ 1883 * 100vh);
 }
 
 .hero {
@@ -45,7 +45,7 @@
     flex-direction: column;
     width: calc(984 / 1280 * 100%);
     max-width: 984px;
-    margin-top: calc(194/ 1883 * 100%);
+    margin-top: calc(194/ 1883 * 100vh);
     align-items: center;
 }
 
