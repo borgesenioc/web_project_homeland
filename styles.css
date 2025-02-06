@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Inter";
-    src: url('./fonts/Inter-Regular.woff2') format('woff2');
+    src: url('./vendor/fonts/Inter-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url('./fonts/Inter-Black.woff2') format('woff2');
+    src: url('./vendor/fonts/Inter-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
 }
@@ -15,7 +15,7 @@
 .page {
     background-color: #2A2C2F;
     color: #FFFFFF;
-    font-family: "Inter";
+    font-family: "Inter", Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -23,30 +23,34 @@
 }
 
 .content {
+    width: 100%;
+    max-width: 1280px;
+    height: 1883px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
-    width: 1280px;
-    height: 1883px;
 }
 
 .content__logo {
-    width: 254px;
-    height: 70px;
-    margin-top: 34px;
+    width: calc(254 / 1280 * 100%);
+    height: auto;
+    margin-top: calc(34 / 1883 * 100%);
 }
 
 .hero {
+    position: absolute;
     display: flex;
     flex-direction: column;
+    width: calc(984 / 1280 * 100%);
+    max-width: 984px;
+    margin-top: calc(194/ 1883 * 100%);
     align-items: center;
-    margin-top: 194px;
-    position: absolute;
 }
 
 .hero__heading {
+    width: calc(720/ 984 * 100%);
     font-size: 96px;
     line-height: 100px;
     justify-content: center;
@@ -87,7 +91,7 @@
 .description__heading {
     width: 830px;
     height: 116px;
-    font-family: "Inter";
+    font-family: "Inter", Arial, sans-serif;
     font-size: 54px;
     line-height: 58px;
     padding: 0;
@@ -131,4 +135,12 @@
 
 * {
     border: 1px solid red;
+}
+
+@media screen and (max-width:  1024px) {
+    
+}
+
+@media screen and (max-width:  544px) {
+    
 }
