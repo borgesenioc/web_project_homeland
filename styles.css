@@ -16,17 +16,43 @@
     background-color: #2A2C2F;
     color: #FFFFFF;
     font-family: "Inter";
+    margin: 0;
+    padding: 0;
+    height: 1883px;
 }
 
 .content {
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding:0;
 }
 
-.content__logo {}
+.content__logo {
+    width: 254px;
+    height: 70px;
+    margin-top: 34px;
+}
 
-.hero {}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 194px;
+    position: absolute;
+}
 
 .hero__heading {
+    font-size: 96px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.break {
+    display: block;
+    text-align: center;
 }
 
 .hero__subheading {}
@@ -46,4 +72,11 @@
 .description__paragraph {
 }
 
-.content__copyright {}
+.content__copyright {
+    position: absolute;
+    margin-top: 1843px;
+}
+
+* {
+    border: 1px solid red;
+}
