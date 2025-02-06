@@ -18,7 +18,8 @@
     font-family: "Inter";
     margin: 0;
     padding: 0;
-    height: 1883px;
+    display: flex;
+    justify-content: center;
 }
 
 .content {
@@ -27,6 +28,8 @@
     align-items: center;
     margin: 0;
     padding:0;
+    width: 1280px;
+    height: 1883px;
 }
 
 .content__logo {
@@ -55,11 +58,25 @@
     text-align: center;
 }
 
-.hero__subheading {}
+.hero__subheading {
+    font-size: 30px;
+    width: 720px;
+    height: 72px;
+    text-align: center;
+}
 
 .hero__image {}
 
-.description {}
+.description {
+    position: absolute;
+    margin-top: 1269px; 
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-right: 148px;
+    width: 830px;
+    height: 482px;
+}
 
 .description__heading {
     font-family: "Inter";
