@@ -46,13 +46,12 @@
 }
 
 .hero {
-    position: absolute;
     display: flex;
     flex-direction: column;
     width: 76.87%;
     max-width: 984px;
-    height: 983px;
-    margin-top: 194px;
+    height: auto;
+    margin-top: 90px;
     align-items: center;
 }
 
@@ -83,14 +82,14 @@
 .hero__image {
     margin: 64px 0 0;
     padding: 0;
+    width: 100%;
 }
 
 .description {
-    position: absolute;
     width: 64.84%;
     max-width: 830px;
-    height: 482px;
-    margin: 1269px 148px 0 0; 
+    height: auto;
+    margin: 92px 0 0; 
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -106,6 +105,7 @@
     line-height: 1.074;
     padding: 0;
     margin: 0;
+    margin-bottom: 40px;
 }
 
 .description__quote {
@@ -138,8 +138,7 @@
 }
 
 .content__copyright {
-    position: absolute;
-    margin: 1843px;
+    margin: 92px 0 0;
     width: 122.96%;
     max-width: 166px;
     font-size: 14px;
@@ -149,20 +148,16 @@
 
 * {
     border: 1px solid red;
-    box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
-    .page{
-       
-    }
     .content__logo {
         margin-top: 30px;
     }
 
     .hero {
         height: 255px;
-        margin-top: 186px;
+        margin-top: 90px;
         width: 93.75%;
     }
 
@@ -190,18 +185,10 @@
         width: 106.67%;
         height: auto;
     }
-
+ 
     .description {
-        position: relative;
-        margin: 1041px 0 0;
-        padding: 0;
-        width: 100%;
+        margin-top: 600px;
     }
-    * {
-        border: 1px solid red;
-        box-sizing: border-box;
-    }
-        
 
 }
 
