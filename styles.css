@@ -4,7 +4,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
 @font-face {
     font-family: "Inter";
     src: url('./vendor/fonts/Inter-Black.woff2') format('woff2');
@@ -150,33 +149,57 @@
 
 * {
     border: 1px solid red;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
-    .content {
-        max-width: 100%;
+    .page{
+       
+    }
+    .content__logo {
+        margin-top: 30px;
     }
 
     .hero {
-       
+        height: 255px;
+        margin-top: 186px;
+        width: 93.75%;
     }
 
     .hero__heading {
-       
+        font-size: 75px;
+        height: 158px;
+        width: 69.01%;
+        text-align: center;
+    }
+
+    .break {
+        display: inline;
     }
 
     .hero__subheading {
-        
+        margin: 25px 0 0;
+        font-size: 30px;
+        height: 72px;
+        width: 100%;
     }
 
     .hero__image {
-        position: absolute;
-        margin: 471px 0 0;
-        width: 100vw;
+        margin: 30px 0 0;
+        padding: 0;
+        width: 106.67%;
+        height: auto;
     }
 
     .description {
-       
+        position: relative;
+        margin: 1041px 0 0;
+        padding: 0;
+        width: 100%;
+    }
+    * {
+        border: 1px solid red;
+        box-sizing: border-box;
     }
         
 
