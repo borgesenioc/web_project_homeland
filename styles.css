@@ -1,14 +1,12 @@
 @font-face {
-    font-family: "Inter";
+    font-family: "Inter-Regular";
     src: url('./vendor/fonts/Inter-Regular.woff2') format('woff2');
-    font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: "Inter";
+    font-family: "Inter-Black";
     src: url('./vendor/fonts/Inter-Black.woff2') format('woff2');
     font-weight: 900;
-    font-style: normal;
 }
 
 .body {
@@ -19,7 +17,7 @@
 .page {
     background-color: #2A2C2F;
     color: #FFFFFF;
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Inter-Regular", Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -30,7 +28,7 @@
 .content {
     width: 100%;
     max-width: 1280px;
-    height: 1883px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +56,7 @@
 .hero__heading {
     width: 73%;
     font-size: 96px;
+    font-family: Inter-Black;
     line-height: 1.04;
     justify-content: center;
     margin: 0;
@@ -73,7 +72,7 @@
     margin: 32px 0 0;
     width: 73.17%;
     max-width: 720px;
-    height: 72px;
+    height: auto;
     text-align: center;
     font-size: 30px;
     line-height: 1.2;
@@ -99,20 +98,20 @@
 .description__heading {
     width: 100%;
     max-width: 830px;
-    height: 116px;
-    font-family: "Inter", Arial, sans-serif;
+    height: auto;
+    font-family: "Inter-Black", Arial, sans-serif;
     font-size: 54px;
     line-height: 1.074;
     padding: 0;
     margin: 0;
-    margin-bottom: 40px;
 }
 
 .description__quote {
     width: 88.91%;
     max-width: 738px;
-    height: 68px;
+    height: auto;
     margin: 40px 0 0;
+    padding: 0;
     font-size: 24px;
     line-height: 1.416;
 }
@@ -120,7 +119,7 @@
 .description__quote-author {
     width: 88.19%;
     max-width: 732px;
-    height: 34px;
+    height: auto;
     text-align: right;
     font-size: 24px;
     line-height: 1.416;
@@ -131,14 +130,14 @@
 .description__paragraph {
     width: 86.98%;
     max-width: 722px;
-    height: 182px;
+    height: auto;
     margin: 32px 0 0;
     font-size: 16px;
     line-height: 1.63;
 }
 
 .content__copyright {
-    margin: 92px 0 0;
+    margin: 92px 0 24px;
     width: 122.96%;
     max-width: 166px;
     font-size: 14px;
@@ -148,6 +147,15 @@
 
 * {
     border: 1px solid red;
+}
+
+@media screen and (max-width:1210px) {
+    .hero__heading {
+        text-align: center;
+    }
+    .break {
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -162,20 +170,15 @@
     }
 
     .hero__heading {
-        font-size: 75px;
-        height: 158px;
+        font-size: 60px;
+        height: auto;
         width: 69.01%;
-        text-align: center;
-    }
-
-    .break {
-        display: inline;
     }
 
     .hero__subheading {
         margin: 25px 0 0;
-        font-size: 30px;
-        height: 72px;
+        font-size: 27px;
+        height: auto;
         width: 100%;
     }
 
@@ -188,8 +191,31 @@
  
     .description {
         margin-top: 90px;
+        width: 92.05%;
     }
 
+    .description__heading {
+        font-size: 40px;
+    }
+
+    .description__quote {
+        margin-top: 50px;
+        font-size: 22px;
+        width: 100%;
+    }
+    .description__quote-author {
+        width: 100%;
+        margin-top: -8px;
+        font-size: 22px;
+    }
+
+    .description__paragraph {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .content__copyright {
+        font-size: 12px;
 }
 
 
@@ -198,3 +224,4 @@
 }
 
 
+}
