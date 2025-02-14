@@ -1,0 +1,15 @@
+.places {
+  display: grid;
+  width: 100%;
+  height: auto;
+}
+
+.places__container {
+  width: 76.87%;
+  height: auto;
+}
+
+.places__image-main {
+  width: 35.93%;
+  height: 55.42%;
+}
