@@ -1,15 +1,64 @@
 .places {
   display: grid;
-  width: 100%;
+  width: 78.87%;
   height: auto;
+  margin-top: 92px;
 }
 
 .places__container {
-  width: 76.87%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
   height: auto;
+  column-gap: 40px;
+  row-gap: 48px;
+}
+
+.places__heading {
+  font-family: Inter-Black;
+  font-size: 72px;
+  margin: 0;
+  padding: 0;
 }
 
 .places__image-main {
-  width: 35.93%;
-  height: 55.42%;
+  width: 100%;
+  height: auto;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.places__button {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.places__artists {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.places__artists-names-one {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.places__artists-names-two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.places__paragraph-one {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.places__paragraph-one {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+* {
+  border: 1px solid red;
 }
