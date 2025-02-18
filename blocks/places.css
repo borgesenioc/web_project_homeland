@@ -7,8 +7,8 @@
 
 .places__container {
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: 0.8fr 1 0.3fr;
+  grid-template-columns: 46.74% 49.18%;
+  grid-template-rows: 27.4% 55.28% 5.7%;
   width: 100%;
   height: auto;
   column-gap: 40px;
@@ -33,6 +33,7 @@
 .places__button {
   grid-column: 1;
   grid-row: 3;
+  align-self: start;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   padding: 13px 21px 13px 20px;
   font-size: 18px;
@@ -82,7 +83,7 @@
   grid-column: 2;
   grid-row: 2;
   margin: 0;
-  padding: ;
+  padding: 0;
 }
 
 * {
