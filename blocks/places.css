@@ -34,8 +34,10 @@
   grid-row: 3;
 }
 
-/* probably best to place artists in one div and paragraphs in another one
-and organize items as a block */
+.places__artists-container {
+  display: flex;
+  flex-direction: column;
+}
 
 .places__artists {
   grid-column: 2;
@@ -52,14 +54,19 @@ and organize items as a block */
   grid-row: 1;
 }
 
-.places__paragraph-one {
-  grid-column: 2;
-  grid-row: 2;
+.places__paragraphs-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  row-gap: 25px;
 }
 
-.places__paragraph-one {
+.places__paragraph {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 2;
+  margin: 0;
+  padding: ;
 }
 
 * {
