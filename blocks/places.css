@@ -18,6 +18,7 @@
 .places__heading {
   font-family: Inter-Black;
   font-size: 72px;
+  line-height: 1.0555;
   margin: 0;
   padding: 0;
 }
@@ -32,6 +33,11 @@
 .places__button {
   grid-column: 1;
   grid-row: 3;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  padding: 13px 21px 13px 20px;
+  font-size: 18px;
+  line-height: 1.21;
+  text-align: center;
 }
 
 .places__artists-container {
@@ -44,12 +50,14 @@
   line-height: 1.22;
 }
 
-.places__artists {
+.places__artists-subheading {
   grid-column: 2;
   grid-row: 1;
   margin: 0;
   padding: 0;
   margin-bottom: 8px;
+  font-size: 12px;
+  color: #aaaaaa;
 }
 
 .places__artists-names {
@@ -66,6 +74,8 @@
   padding: 0;
   justify-content: baseline;
   row-gap: 25px;
+  font-size: 18px;
+  line-height: 1.63;
 }
 
 .places__paragraph {
