@@ -37,21 +37,26 @@
 .places__artists-container {
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.22;
 }
 
 .places__artists {
   grid-column: 2;
   grid-row: 1;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
 }
 
-.places__artists-names-one {
+.places__artists-names {
   grid-column: 2;
   grid-row: 1;
-}
-
-.places__artists-names-two {
-  grid-column: 2;
-  grid-row: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .places__paragraphs-container {
@@ -59,6 +64,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+  justify-content: baseline;
   row-gap: 25px;
 }
 
