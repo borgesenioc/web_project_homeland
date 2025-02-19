@@ -7,8 +7,8 @@
 
 .places__container {
   display: grid;
-  grid-template-columns: 46.74% 49.18%;
-  grid-template-rows: 27.4% 55.28% 5.7%;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto auto 1fr;
   width: 100%;
   height: auto;
   column-gap: 40px;
