@@ -130,6 +130,8 @@
   .places__container {
     margin-top: 0;
     grid-template-columns: 340px 1fr;
+    grid-template-rows: auto 340px 1fr;
+    gap: 46px 28px;
   }
 
   .places__image-wrapper {
@@ -146,8 +148,33 @@
     padding: 13px 20px;
     width: 95%;
   }
-}
 
+  .places__artists-subheading {
+    font-size: 11px;
+  }
+
+  .places__artists-names {
+    font-size: 17px;
+  }
+
+  .places__paragraphs-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: baseline;
+    row-gap: 25px;
+    font-size: 15px;
+    line-height: 1.63;
+  }
+
+  .places__paragraph {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    padding: 0;
+  }
+}
 * {
   border: 1px solid red;
 }
