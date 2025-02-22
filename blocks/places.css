@@ -180,6 +180,9 @@
     padding: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+}
 * {
   border: 1px solid red;
 }
