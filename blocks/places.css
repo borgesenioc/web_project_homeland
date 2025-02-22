@@ -151,7 +151,8 @@
     grid-row: 2;
     margin: 388px 13px 0 0;
     padding: 13px 20px;
-    width: 93%;
+    box-sizing: border-box;
+    width: 355px;
   }
 
   .places__artists-subheading {
@@ -180,6 +181,52 @@
     padding: 0;
   }
 }
-* {
-  border: 1px solid red;
+
+@media screen and (max-width: 768px) {
+  .places {
+    width: 100%;
+    height: auto;
+    margin-top: 62px;
+    row-gap: 50px;
+  }
+
+  .places__container {
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    row-gap: 30px;
+    justify-items: center;
+  }
+
+  .places__image-wrapper {
+    width: 100%;
+    height: 320px;
+    grid-row: 3;
+  }
+
+  .places__heading {
+    width: 288px;
+    font-size: 32px;
+    justify-self: baseline;
+    margin-left: 16px;
+  }
+
+  .places__artists-container {
+    margin: 0 16px;
+    justify-self: baseline;
+  }
+
+  .places__paragraphs-container {
+    width: 90%;
+    font-size: 15px;
+    line-height: 1.63;
+  }
+
+  .places__button {
+    grid-row: 5;
+    margin: 0 16px;
+    padding: 15px 22px 16px 21px;
+    width: 288px;
+    font-size: 13px;
+  }
 }
