@@ -151,7 +151,8 @@
     grid-row: 2;
     margin: 388px 13px 0 0;
     padding: 13px 20px;
-    width: 93%;
+    box-sizing: border-box;
+    width: 355px;
   }
 
   .places__artists-subheading {
@@ -206,10 +207,13 @@
   .places__heading {
     width: 288px;
     font-size: 32px;
+    justify-self: baseline;
+    margin-left: 16px;
   }
 
   .places__artists-container {
     margin: 0 16px;
+    justify-self: baseline;
   }
 
   .places__paragraphs-container {
@@ -218,21 +222,11 @@
     line-height: 1.63;
   }
 
-  .places__paragraph {
-    grid-column: 2;
-    grid-row: 2;
-    margin: 0;
-    padding: 0;
-  }
-
   .places__button {
     grid-row: 5;
     margin: 0 16px;
     padding: 15px 22px 16px 21px;
-    width: 76.57%;
+    width: 288px;
     font-size: 13px;
   }
-}
-* {
-  border: 1px solid red;
 }
