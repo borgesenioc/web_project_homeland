@@ -107,7 +107,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  justify-content: baseline;
+  align-items: baseline;
   row-gap: 25px;
   font-size: 18px;
   line-height: 1.63;
@@ -168,7 +168,6 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
-    justify-content: baseline;
     row-gap: 25px;
     font-size: 15px;
     line-height: 1.63;
